@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Print Ledger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <nav class="nav" id="nav">
+      <div class="brand"><span class="logo">🖨️</span><span>Print Ledger</span></div>
+      <a href="#/dashboard" data-r="dashboard"><i>▦</i><span>Dashboard</span></a>
+      <a href="#/print" data-r="print"><i>＋</i><span>Add Print</span></a>
+      <a href="#/payments" data-r="payments"><i>₹</i><span>Payments</span></a>
+      <a href="#/students" data-r="students"><i>☺</i><span>Students</span></a>
+      <a href="#/reports" data-r="reports"><i>☰</i><span>Reports</span></a>
+      <a href="#/settings" data-r="settings"><i>⚙</i><span>Settings</span></a>
+    </nav>
+    <main id="view" class="view"><div class="loading">Loading…</div></main>
+  </div>
+
+  <dialog id="modal"></dialog>
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
